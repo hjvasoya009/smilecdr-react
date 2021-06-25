@@ -11,3 +11,113 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Patients */
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.patient-search {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+input[name="patientName"] {
+  margin-right: 1rem;
+  padding: 0.25rem 0.5rem;
+}
+
+input[name="birthdate"] {
+  padding: 0.1rem 0.5rem;
+  margin-right: 1rem;
+}
+
+.search-btn {
+  width: 100px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.search-result {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.no-result {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.patient-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.patient-table td,
+.patient-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.patient-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.patient-table tr:hover {
+  background-color: #ddd;
+}
+
+.patient-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+/* Practitioners */
+
+.practitioner-wrapper {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.cardsContainerStyle {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.cardStyle {
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 125px 1fr;
+  grid-gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardStyle:hover {
+  background-color: #EEE;
+}
+
+@media screen and (min-width: 768px) {
+  .cardsContainerStyle {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 1324px) {
+  .cardsContainerStyle {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

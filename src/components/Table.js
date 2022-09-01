@@ -14,7 +14,7 @@ class Table extends Component {
         searchDate: ''
     };
 
-    // Initial API call to get list of patient
+    // Initial API call to get list of patients
     componentDidMount() {
         getPatients().then((res) => {
             this.setState({ patients: this.patientObj(res) });
